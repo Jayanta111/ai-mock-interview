@@ -14,7 +14,8 @@ function Header() {
   }, [path])
 
   return (
-    <div className='bg-secondary shadow-md items-center'>
+    <div className='bg-secondary shadow-md items-center items-fix
+    fixed top-0 left-0 right-0 z-50'>
       <div className='flex p-4 items-center justify-between'>
         <div className='flex items-center gap-4'>
           <Image src={'/logo.svg'} width={50} height={50} alt='Logo' />
@@ -22,7 +23,7 @@ function Header() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className='hidden md:flex gap-6 items-center'>
+        <ul className='hidden md:flex gap-6 items-center '>
           <li className='hover:text-primary hover:font-bold transition-all cursor-pointer'>Dashboard</li>
           <li className='hover:text-primary hover:font-bold transition-all cursor-pointer'>Questions</li>
           <li className='hover:text-primary hover:font-bold transition-all cursor-pointer'>Upgrade</li>
